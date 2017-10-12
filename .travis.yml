@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: TDHprUZIonsyT8KQRGfsoIRn2Av++W+aiJk0rpmsVTc9JV2Vwmr6jaR7myUmh4FnvPduxarTt3zG5Vgau20B4lgeDAkeT0TEdx1w7gPmqnunyxgILG4XudRVoEGG5PKj5ZP3Pg7I8zEbhtgFMaeyXtJsLSLOEKPBIf79jLXnj5+CKXvsp88N5dNK56Mlqs8dR0t2onHb7cY78Fsfhtsz9mfDvdr5fryWYfMvhpsAOTG6gPuX3pF1cZx0mA/oJFMYkcFInh6ElHcTPsHiJXp6IVCQ6IU/e6qnpzmzO1PTFfjNIU/FJEsOWk+ikd3mtOcfi1SJw59J42Cu3/dS6AULi/KU0E/QAHeX3DHN3HZWRlHxfmj87VOSsQTuX1VGUlY54N4JY5Ksv22CLdPAQWzswayyH3xXft+2B+4gKvlgHM3iZXOQjW74gPduLkwx0KiqpxivmS4c8gf1O2JVjCnOlnVlCgVj5kO1TTx+kljIur0mxJ/99jk+RpTFj3KxbRPo2uVc42HImWSKlbFR92gufyvrPa6wlEijJNB2SUzVFN8JLYDsL0LqCzglrzE9twekDgVOAmEawgkjBmAPwpmpk0anelROAwoSlOXruYyBkbdierMFIMkkEy49N+kQs46o1QtLU0z88YZeO6PXsP4j2OOmtoXcuSFp3lQUv2a6I3s=
+  app: cryptic-reef-37320
+  on:
+    repo: amandaherschleb/node-restaurants-app-mongoose-testing
+    branch: feature/with-tests
